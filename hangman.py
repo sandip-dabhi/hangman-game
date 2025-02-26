@@ -1,11 +1,9 @@
 import random
 import requests
-
 def select_random_word():
     response = requests.get("https://random-word-api.herokuapp.com/word?number=1")
     word = response.json()[0]
     return word
-
 def display_hangman(tries):
     stages = [
         """
