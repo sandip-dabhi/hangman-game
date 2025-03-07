@@ -100,7 +100,6 @@ def hangman():
         word_display = [letter if letter in guessed_letters else "_" for letter in word]
         print(display_hangman(tries))
         print("Word: " + " ".join(word_display))
-
     if tries == 0:
         print("You lost! The word was " + word)
     else:
